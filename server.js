@@ -4,7 +4,7 @@ var url = require("url");
 function start(route, handle) {
   function onRequest(request, response) {
   if (req.url == '/upload' && req.method.toLowerCase() == 'post') {
-    // parse a file upload
+    //test parse a file upload
     var form = new formidable.IncomingForm();
     form.parse(req, function(err, fields, files) {
       res.writeHead(200, {'content-type': 'text/plain'});
